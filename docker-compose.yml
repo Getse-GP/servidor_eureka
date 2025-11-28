@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  servidoreureka:
+    build: Eureka-Server
+    mem_limit: 512m
+    #El puerto 8761 es el configurado para tu Eureka Server
+    ports:
+      - "8761:8761"
+    restart: always
